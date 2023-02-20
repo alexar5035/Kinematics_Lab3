@@ -40,9 +40,8 @@ def get_rot(trans):
 	# find roll by using the given formula
 	roll = (math.atan2((trans[2][1]),(trans[2][2])))
 	# find pitch by using the given formula
-	pitch = (math.atan2(-(trans[2][0]), math.sqrt((trans[2][1])**2 + (trans[2][2] **2)))
+	pitch = (math.atan2(-(trans[2][0]), math.sqrt((trans[2][1])**2 + (trans[2][2] **2))))
 	# find yaw by using the given formula
 	yaw = (math.atan2((trans[1][0]), (trans[0][0])))
 	# return the values
 	return roll, pitch, yaw
-
